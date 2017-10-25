@@ -1,0 +1,26 @@
+<button type="button" class="btn btn-secondary rounded-0 m-3 p-3 fixed-top menuBtn" (click)='toggleNav=!toggleNav' *ngIf='!toggleNav'>
+    menu
+</button>
+<button type="button" class="btn btn-secondary rounded-0 m-3 p-3 fixed-top menuBtn" (click)='toggleNav=!toggleNav' *ngIf='toggleNav'>
+    close
+</button>
+
+
+<!-- <div class="container-fluid bg-light px-0 fullPage" *ngIf='toggleNav' @fadeInOutLeft> -->
+<div class="container-fluid bg-light px-0 fullPage fixed-top" *ngIf='toggleNav' @fadeInOutLeft>
+
+  <nav class="col-sm-11 col-md-6 mx-auto my-0 p-5 asTable">
+    <ul class="nav nav-fill asTableCell col-sm-6 mx-auto">
+      <div class="col-sm-5 mx-auto">
+        <div class="logo" style="margin-bottom: 71px;">
+          <img src="../../../assets/MYA_Logo2.svg" alt=" Mya Logo">
+        </div>
+      </div>
+      <li class="nav-item rounded-0" *ngFor="let link of links">
+        <a class="nav-link p-5 rounded-0 noRadius" [routerLink]="link.linkUrl " routerLinkActive="active" [routerLinkActiveOptions]='{exact: true}'
+          (click)='toggleNav=!toggleNav'>{{ link.linkText }}</a>
+      </li>
+    </ul>
+  </nav>
+
+</div>

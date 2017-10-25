@@ -1,0 +1,36 @@
+<div class="max71 container-fluid px-5 bg-light cards">
+    <div class="row p-5">
+        <div class="col-sm-12">
+
+            <form (submit)="addWorkSubmit()">
+                <div class="form-group">
+                    <label for="inputTitle" class="col-form-label">Title</label>
+                    <input type="text" class="form-control" id="inputTitle" placeholder="Title Please!" name="title" [(ngModel)]="title">
+                </div>
+                <!-- <div class="form-group">
+                    <label for="inputDescription" class="col-form-label">Description</label>
+                    <input type="text" class="form-control" id="inputDescription" placeholder="Description Please!" name="description" [(ngModel)]="description">
+                </div> -->
+                <div class="form-group">
+                    <label for="inputDescription" class="col-form-label">Description</label>
+                    <textarea rows='7' type="text" class="form-control" id="inputDescription" placeholder="Description Please!" name="description" [(ngModel)]="description"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="exampleRadios" id="exampleRadios1" [value]="true" [(ngModel)]="featured">
+                Featured (Show in home page)
+            </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputImageUrl" class="col-form-label">ImageUrl</label>
+                    <input type="text" class="form-control" id="inputImageUrl" placeholder="ImageUrl Please!" name="imageUrl" [(ngModel)]="imageUrl">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Add work</button>
+            </form>
+
+        </div>
+    </div>
+</div>

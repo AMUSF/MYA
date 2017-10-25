@@ -1,0 +1,39 @@
+.menuBtn {
+  color: $accentColor-01;
+  border: 0px !important;
+  background-color: $mainDark-02 !important;
+  cursor: pointer;
+  z-index: 1031;
+  &:hover,
+  &:focus {
+    color: $accentColor-01-L !important;
+    background-color: $mainDark-L !important;
+  }
+}
+
+nav {
+  height: 100vh;
+  .nav-link {
+    color: $mainDark;
+    background-color: transparent; // max-width: 31%;
+    margin: auto;
+    &:hover,
+    &:focus {
+      color: $accentColor-01;
+      background-color: $mainDark-02
+    }
+    &.active {
+      color: $mainDark-02;
+      background-color: $accentColor-01
+    }
+  }
+}
+
+.logo {
+  .cls-1 {
+    fill: $accentColor-01;
+  }
+  .cls-2 {
+    fill: $mainDark-02;
+  }
+}
