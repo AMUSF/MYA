@@ -6,14 +6,12 @@ import { FirebaseService } from './../../services/firebase.service';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  animations:[ fadeInOutBottom ]
+  animations: [fadeInOutBottom]
 })
 export class HomeComponent implements OnInit {
   featuredWorks: any[];
   featuredWorks$;
-
   constructor(private FeaturedWorks: FirebaseService) { }
-
   ngOnInit() {
     this.featuredWorks$ = this.FeaturedWorks.getFeaturedWorks();
     // this.featuredWorks$ = this.FeaturedWorks.getWorks();

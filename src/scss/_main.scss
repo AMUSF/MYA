@@ -15,8 +15,7 @@ body {
   font-style: normal;
   letter-spacing: normal;
   word-break: keep-all;
-  word-wrap: initial;
-  margin-bottom: 173px;
+  word-wrap: initial; // margin-bottom: 1px;
 }
 
 //   My Classes
@@ -126,12 +125,12 @@ body {
 // Medium devices (tablets, 768px and up)
 @media (max-width: 768px) {
   .max71 {
-    max-width: 91%
+    max-width: 97%
   }
   .display-1,
   .display-2 {
     line-height: 1;
-    font-size: 4.7rem;
+    font-size: 3.137rem;
     font-weight: 300
   }
 }

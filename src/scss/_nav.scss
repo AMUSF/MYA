@@ -30,10 +30,23 @@ nav {
 }
 
 .logo {
+  max-width: 71%;
+  margin: auto;
+  margin-bottom: 13% !important;
   .cls-1 {
     fill: $accentColor-01;
   }
   .cls-2 {
     fill: $mainDark-02;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+  .logo {
+    max-width: 51%;
+  }
+  .p-5 {
+    padding: 1.73rem!important;
   }
 }
