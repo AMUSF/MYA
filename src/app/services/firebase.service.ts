@@ -3,10 +3,10 @@ import { AngularFireDatabase, FirebaseListObservable, FirebaseObjectObservable }
 
 @Injectable()
 export class FirebaseService {
-  works: FirebaseListObservable <any[]> ;
-  featuredWorks: FirebaseListObservable <any[]>;
-  about: FirebaseObjectObservable <any> ;
-  work: FirebaseObjectObservable <any> ;
+  works: FirebaseListObservable < any[] > ;
+  featuredWorks: FirebaseListObservable < any[] > ;
+  about: FirebaseObjectObservable < any > ;
+  work: FirebaseObjectObservable < any > ;
   imageUrl: string;
 
   constructor(private usfDB: AngularFireDatabase) {}
@@ -17,8 +17,7 @@ export class FirebaseService {
         orderByChild: 'title',
       }
     });
-  
-  };
+  }
 
   getFeaturedWorks() {
     return this.featuredWorks = this.usfDB.list('/works', {
@@ -31,13 +30,15 @@ export class FirebaseService {
 
   getAbout() {
     return this.about = this.usfDB.object('/about');
-  };
+  }
 
-  addWork(work){
+  addWork(work) {
     return this.usfDB.list('/works').push(work);
-  };
+  }
 
 }
+
+
 
 
 

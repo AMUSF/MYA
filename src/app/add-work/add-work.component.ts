@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from './../services/firebase.service';
-import { Router } from "@angular/router";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-work',
@@ -8,23 +8,23 @@ import { Router } from "@angular/router";
   styleUrls: ['./add-work.component.scss']
 })
 export class AddWorkComponent implements OnInit {
-  title: any = "";
-  description: any = "";
+  title: any = '';
+  description: any = '';
   featured: boolean = false;
-  imageUrl: any = "";
+  imageUrl: any = '';
 
 
   constructor(
     private fbs: FirebaseService,
     private router: Router
-  ) { }
+  ) {}
 
   ngOnInit() {
 
   }
 
   addWorkSubmit() {
-    let work = {
+    const work = {
       title: this.title,
       description: this.description,
       featured: this.featured,
@@ -35,12 +35,11 @@ export class AddWorkComponent implements OnInit {
 
     this.router.navigate(['/']);
 
-    work.title.value = "";
-    work.description.value = "";
+    work.title.value = '';
+    work.description.value = '';
     work.featured = false;
-    work.imageUrl.value = "";
-
-
+    work.imageUrl.value = '';
   }
-
 }
+
+

@@ -5,35 +5,31 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
-  animations:[ fadeInOutLeft ]
+  animations: [fadeInOutLeft]
 })
 export class NavComponent implements OnInit {
-links: linkInterface[];
-toggleNav: boolean = false;
-  constructor() { }
+  links: LinkInterface[];
+  toggleNav: boolean = false;
+  constructor() {}
 
   ngOnInit() {
-    this.links = [
-      {
-        linkText: 'Home',
-        linkUrl: '/'
-      },{
-        linkText: 'Works',
-        linkUrl: '/works'
-      },{
-        linkText: 'About',
-        linkUrl: '/about'
-      },{
-        linkText: 'Contact',
-        linkUrl: '/contact'
-      }
-    ]
-    
+    this.links = [{
+      linkText: 'Home',
+      linkUrl: '/'
+    }, {
+      linkText: 'Works',
+      linkUrl: '/works'
+    }, {
+      linkText: 'About',
+      linkUrl: '/about'
+    }, {
+      linkText: 'Contact',
+      linkUrl: '/contact'
+    }];
   }
-
 }
 
-interface linkInterface{
-  linkText: string,
-  linkUrl: string
+interface LinkInterface {
+  linkText: string;
+  linkUrl: string;
 }

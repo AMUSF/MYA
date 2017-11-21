@@ -17,5 +17,5 @@ export class HomeComponent implements OnInit {
     // this.featuredWorks$ = this.FeaturedWorks.getWorks();
     // this.FeaturedWorks.getWorks().subscribe((FeaturedWork)=> {this.featuredWorks = FeaturedWork});
   }
-
 }
+

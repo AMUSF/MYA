@@ -1,11 +1,15 @@
 <div class="max71 container-fluid px-5" *ngIf='about$ | async as about'>
   <h1 class="display-1 my-5" @fadeInOutBottom>{{ pageTitle }}</h1>
   <div class="row p-5 bg-light" @fadeInOut>
-    <div class="col-sm-12" *ngIf='!cookie_About2'>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, provident magni animi saepe inventore quos mollitia ipsa.
+    <div class="col-sm-7 card m-5 p5" *ngIf='!cookie_About2'>
+      Cookie test
+      <br>Cookie test
+      <br> Cookie test
+      <br>
+      <a name="" id="" class="btn btn-primary" role="button" (click)='toggle()'>Click the title to hide it for a helf day :)</a>
     </div>
     <div class="col-sm-12">
-      <h1 class=".h1 line-tl" [innerHTML]="about.title" (click)='toggle()'></h1>
+      <h1 class=".h1 line-tl" [innerHTML]="about.title"></h1>
       <!-- <h1 class=".h1"> {{ (about$ | async).title}} </h1> -->
       <div class="spacer-31"></div>
       <p [innerHtml]='about.paragraf'>

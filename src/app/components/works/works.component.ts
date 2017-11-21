@@ -3,7 +3,7 @@ import { FirebaseService } from './../../services/firebase.service';
 import * as firebase from 'firebase';
 import { FirebaseListObservable } from 'angularfire2/database';
 import { fadeInOutBottom, fadeInOut } from './../../animations/main-animations';
-import "rxjs/add/operator/map";
+import 'rxjs/add/operator/map';
 
 
 
@@ -11,28 +11,20 @@ import "rxjs/add/operator/map";
   selector: 'app-works',
   templateUrl: './works.component.html',
   styleUrls: ['./works.component.css'],
-  animations:[ fadeInOutBottom, fadeInOut ]
+  animations: [fadeInOutBottom, fadeInOut]
 })
 export class WorksComponent implements OnInit {
   pageTitle: string = 'Works';
-// works : any[];
-featuredWorks : any[];
-works$;
-imageUrl: string;
+  // works : any[];
+  featuredWorks: any[];
+  works$;
+  imageUrl: string;
 
-  constructor(private firebaseService: FirebaseService) {
-  }
-  
+  constructor(private firebaseService: FirebaseService) { }
+
   ngOnInit() {
     this.works$ = this.firebaseService.getWorks();
-    
-    
-      
-    
   }
-
-
-
-  
-  
 }
+
+

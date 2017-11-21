@@ -27,6 +27,7 @@ import { AddWorkComponent } from './add-work/add-work.component';
 // Pipes
 import { FeaturedPipe } from './pipes/featured.pipe';
 import { OrderPipe } from './pipes/order.pipe';
+import { TestComponent } from './components/test/test.component';
 
 const usfRoutes: Routes = [
   {
@@ -77,7 +78,8 @@ const mya = {
     BannerComponent,
     FeaturedPipe,
     AddWorkComponent,
-    OrderPipe
+    OrderPipe,
+    TestComponent
   ],
   imports: [
     BrowserModule,
