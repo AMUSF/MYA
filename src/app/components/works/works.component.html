@@ -1,0 +1,24 @@
+<!-- <div class="max71 container-fluid px-5 bg-light cards">
+  <div class="row p-5">
+    <div class="col-sm-6" *ngFor="let work of works$ | async">
+      <img class='img-fluid' [src]="work.imgUrl" alt="{{ work.title +' image' }}">
+      <h1>{{ work.title }}</h1>
+      <p class="">{{ work.description}}</p>
+    </div>
+  </div>
+</div> -->
+
+<div class="max71 container-fluid p-0">
+  <h1 class="display-1 p-3 my-5">{{ pageTitle }}</h1>
+  <div class="row p-1 bg-light" @fadeInOut>
+    <div class="col-6 col-sm-4 col-lg-3 p-1 m-0" *ngFor="let work of works$ | async | order: 'asc'" @fadeInOutBottom>
+      <div class="card p-0 m-1 text-center" *ngIf='work'>
+        <img class="card-img-top" [src]="work.imageUrl" alt="{{ work.title +' image' }}">
+        <div class="card-block">
+          <h1>{{ work.title }}</h1>
+          <!-- <p class="">{{ work.description}}</p> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

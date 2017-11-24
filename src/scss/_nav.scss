@@ -1,0 +1,52 @@
+.menuBtn {
+  color: $accentColor-01;
+  border: 0px !important;
+  background-color: $mainDark-02 !important;
+  cursor: pointer;
+  z-index: 1031;
+  &:hover,
+  &:focus {
+    color: $accentColor-01-L !important;
+    background-color: $mainDark-L !important;
+  }
+}
+
+nav {
+  height: 100vh;
+  .nav-link {
+    color: $mainDark;
+    background-color: transparent; // max-width: 31%;
+    margin: auto;
+    &:hover,
+    &:focus {
+      color: $accentColor-01;
+      background-color: $mainDark-02
+    }
+    &.active {
+      color: $mainDark-02;
+      background-color: $accentColor-01
+    }
+  }
+}
+
+.logo {
+  max-width: 71%;
+  margin: auto;
+  margin-bottom: 13% !important;
+  .cls-1 {
+    fill: $accentColor-01;
+  }
+  .cls-2 {
+    fill: $mainDark-02;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+  .logo {
+    max-width: 51%;
+  }
+  .p-5 {
+    padding: 1.73rem!important;
+  }
+}

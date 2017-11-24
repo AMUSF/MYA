@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box !important;
+  outline: none !important;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: white;
+  font-family: 'Roboto', Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-weight: 100%;
+  font-style: normal;
+  letter-spacing: normal;
+  word-break: keep-all;
+  word-wrap: initial; // margin-bottom: 1px;
+}
+
+//   My Classes
+.banner {
+  // min-height: 100vh;
+  height: 100vh; // background-image: url('https://firebasestorage.googleapis.com/v0/b/mya-pf.appspot.com/o/Cliffs%20of%20mohair_04.jpg?alt=media&token=2be880a0-f5c4-440c-bf46-3e5358c82d52');
+  background-image: url('https://images.unsplash.com/photo-1499893494194-1bd01a016061?dpr=1&auto=compress,format&fit=crop&w=2702&h=&q=80&cs=tinysrgb&crop=');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.fullPage {
+  height: 100vh;
+  width: 100%;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.h1 {
+  font-family: 'Cormorant', 'Times New Roman', Times, serif;
+  font-weight: 300i;
+  font-style: italic;
+  font-size: 5.317rem;
+  color: $mainDark-02 !important;
+}
+
+.max {
+  &71 {
+    max-width: 71%
+  }
+  &51 {
+    max-width: 51%
+  }
+  &31 {
+    max-width: 31%
+  }
+}
+
+.textShadow {
+  text-shadow: 0.7px 0.7px 0px white;
+}
+
+.noRadius {
+  border-radius: $noRadius;
+}
+
+.bg-light {
+  background-color: $mainLight;
+}
+
+.line-tl:before,
+{
+  display: block;
+  content: "";
+  height: 4px;
+  background: #333;
+  width: 17%;
+  margin-left: -11%;
+  margin-top: -1%;
+  position: absolute;
+}
+
+.spacer {
+  display: block;
+  width: 100%;
+  &-13 {
+    min-height: 13px
+  }
+  &-31 {
+    min-height: 31px
+  }
+  &-71 {
+    min-height: 71px
+  }
+  &-111 {
+    min-height: 111px
+  }
+  &-131 {
+    min-height: 131px
+  }
+}
+
+.bg-accenet01 {
+  background-color: $accentColor-01;
+}
+
+.asTable {
+  display: table;
+  height: inherit !important;
+  position: relative;
+}
+
+.asTableCell {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .max71 {
+    max-width: 100%
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 768px) {
+  .max71 {
+    max-width: 97%
+  }
+  .display-1,
+  .display-2 {
+    line-height: 1;
+    font-size: 3.137rem;
+    font-weight: 300
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1200px) {}
