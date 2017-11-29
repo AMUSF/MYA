@@ -10,7 +10,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { FirebaseService } from './services/firebase.service';
 
-//Extra sservieces
+// Extra sservieces
 import { CookieService } from 'ngx-cookie-service';
 
 // Components
@@ -50,18 +50,18 @@ const usfRoutes: Routes = [
     path: 'add-work',
     component: AddWorkComponent
   }
-]
+];
 
 
 const mya = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyCdP_SqY7tEGKGw2ZxaE19eKXD1qqla4q8",
-    authDomain: "mya-pf.firebaseapp.com",
-    databaseURL: "https://mya-pf.firebaseio.com",
-    projectId: "mya-pf",
-    storageBucket: "mya-pf.appspot.com",
-    messagingSenderId: "505042028471"
+    apiKey: 'AIzaSyCdP_SqY7tEGKGw2ZxaE19eKXD1qqla4q8',
+    authDomain: 'mya-pf.firebaseapp.com',
+    databaseURL: 'https://mya-pf.firebaseio.com',
+    projectId: 'mya-pf',
+    storageBucket: 'mya-pf.appspot.com',
+    messagingSenderId: '505042028471'
   }
 };
 
