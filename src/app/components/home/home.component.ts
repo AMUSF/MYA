@@ -1,4 +1,4 @@
-import { fadeInOut, fadeInOutBottom } from './../../animations/main-animations';
+import { fadeInOutBottom } from './../../animations/main-animations';
 import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from './../../services/firebase.service';
 

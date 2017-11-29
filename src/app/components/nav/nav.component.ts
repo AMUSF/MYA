@@ -1,11 +1,11 @@
-import { fadeInOutLeft } from './../../animations/main-animations';
+import * as anims from './../../animations/main-animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
-  animations: [fadeInOutLeft]
+  animations: [anims.fadeInOutLeft ,  anims.fadeInOut]
 })
 export class NavComponent implements OnInit {
   links: LinkInterface[];

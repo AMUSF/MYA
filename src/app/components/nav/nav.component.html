@@ -1,7 +1,7 @@
-<button type="button" class="btn btn-secondary rounded-0 m-3 p-3 fixed-top menuBtn" (click)='toggleNav=!toggleNav' *ngIf='!toggleNav'>
+<button type="button" class="btn btn-secondary rounded-0 m-3 p-3 fixed-top menuBtn" (click)='toggleNav=!toggleNav'  *ngIf='!toggleNav' @fadeInOutLeft>
   menu
 </button>
-<button type="button" class="btn btn-secondary rounded-0 m-3 p-3 fixed-top menuBtn" (click)='toggleNav=!toggleNav' *ngIf='toggleNav'>
+<button type="button" class="btn btn-secondary rounded-0 m-3 p-3 fixed-top menuBtn" (click)='toggleNav=!toggleNav' *ngIf='toggleNav' @fadeInOutLeft>
   close
 </button>
 
