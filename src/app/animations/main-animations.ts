@@ -12,7 +12,7 @@ export let fadeInOut = trigger('fadeInOut', [
 export let fadeInOutLeft = trigger('fadeInOutLeft', [
   state('void', style({
     opacity: 0,
-    transform: "translateX(-100%)"
+    transform: 'translateX(-100%)'
   })),
   transition(':enter, :leave', [
     animate('371ms 71ms ease-in-out')
@@ -22,7 +22,7 @@ export let fadeInOutLeft = trigger('fadeInOutLeft', [
 export let fadeInOutBottom = trigger('fadeInOutBottom', [
   state('void', style({
     opacity: 0,
-    transform: "translateY(31px)"
+    transform: 'translateY(31px)'
   })),
   transition(':enter, :leave', [
     animate('731ms 731ms ease-in-out')
