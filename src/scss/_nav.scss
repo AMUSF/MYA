@@ -4,6 +4,7 @@
   background-color: $mainDark-02 !important;
   cursor: pointer;
   z-index: 1031;
+  right: auto !important;
   &:hover,
   &:focus {
     color: $accentColor-01-L !important;
