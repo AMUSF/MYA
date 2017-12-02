@@ -12,11 +12,9 @@ export class OrderPipe implements PipeTransform {
       }
       if (orderDirection === 'asc') {
         return works;
-      }
-      if (orderDirection === 'desc') {
+      }else if (orderDirection === 'desc') {
         return works.reverse();
-      }
-      if (orderDirection !== 'asc' || orderDirection !== 'desc') {
+      }else if (orderDirection !== 'asc' || orderDirection !== 'desc') {
         return works;
       }
     }
