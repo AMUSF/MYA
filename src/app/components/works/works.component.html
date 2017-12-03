@@ -11,7 +11,7 @@
 <div class="max71 container-fluid p-0">
   <h1 class="display-1 p-3 my-5">{{ pageTitle }}</h1>
   <div class="row p-1 bg-light" @fadeInOut>
-    <div class="col-6 col-sm-4 col-lg-3 p-1 m-0" *ngFor="let work of works$ | async | orderBy: 'desc'" @fadeInOutBottom>
+    <div class="col-6 col-sm-4 col-lg-3 p-1 m-0" *ngFor="let work of works$ | async | orderBy: 'asc'" @fadeInOutBottom>
       <div class="card p-0 m-1 text-center" *ngIf='work'>
         <img class="card-img-top" [src]="work.imageUrl" alt="{{ work.title +' image' }}">
         <div class="card-block">
