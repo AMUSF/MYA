@@ -12,6 +12,7 @@ export class OrderPipe implements PipeTransform {
       }
       if (orderDirection === 'asc') {
         return works;
+        // return works.sort((a, b) => a.title - b.title);
       }
       if (orderDirection === 'desc') {
         return works.reverse();
