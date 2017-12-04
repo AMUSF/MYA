@@ -5,23 +5,21 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class OrderPipe implements PipeTransform {
 
-  transform(works: any[], orderDirection?: any): any {
+  transform(works: any[], orderDirection ? : any): any {
     if (works) {
       if (orderDirection === undefined) {
         return works;
-      }
-      if (orderDirection === 'asc') {
+      } else if (orderDirection === 'asc') {
         return works;
         // return works.sort((a, b) => a.title - b.title);
-      }
-      if (orderDirection === 'desc') {
+      } else if (orderDirection === 'desc') {
         return works.reverse();
-      }
-      if (orderDirection !== 'asc' || orderDirection !== 'desc') {
+      } else if (orderDirection !== 'asc' || orderDirection !== 'desc') {
         return works;
       }
     }
   }
 }
+
 
 
