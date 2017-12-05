@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class OrderPipe implements PipeTransform {
 
-  transform(works: any[], orderDirection ? : any): any {
+  transform(works: any[], orderDirection ?: any): any {
     if (works) {
       if (orderDirection === undefined) {
         return works;
